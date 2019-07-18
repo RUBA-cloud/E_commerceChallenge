@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".add2item"
+    tools:showIn="@layout/app_bar_add2item">
+    <LinearLayout
+        android:background="#C1BCD8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ProductDiscriptian"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+
+            android:ems="10"
+            android:hint="Write Product Descriptian"
+            android:inputType="textPersonName" />
+        <LinearLayout
+            android:background="#C1BCD8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" Product Name"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/Productid"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" ProductId"
+                android:inputType="number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="#E4DDDC"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Productsalary"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Product Salary"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Product Salary Currency"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Write Product Thumbnail"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/addimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Add image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="discount"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

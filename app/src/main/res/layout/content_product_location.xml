@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductLocation"
+    tools:showIn="@layout/activity_product_location">
+
+    <LinearLayout
+        android:background="#C1BCD8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/category_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="  category_Id"
+        android:inputType="number"
+        />
+
+
+    <EditText
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="  category_Name"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/Department_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="  Department_Id"
+        android:inputType="number"
+        />
+        <EditText
+            android:id="@+id/Department_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Department_name"
+            android:inputType="text"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    <LinearLayout
+        android:background="#C1BCD8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar android:id="@+id/pb2"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:maxHeight="10dip"
+            android:minHeight="10dip"
+            android:progress="0"
+            android:secondaryProgress="100"
+            ></ProgressBar>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /></LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

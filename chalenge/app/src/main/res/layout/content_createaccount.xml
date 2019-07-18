@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".createaccount"
+    tools:showIn="@layout/activity_createaccount">
+
+    <LinearLayout
+        android:background="#C1BCD8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="Enter name" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:gravity="center"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addressa"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:hint="Enter Your Address1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addressb"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:hint="Enter Your Address2"
+
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Country"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" eve_Phone"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/region"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" region"
+                android:inputType="text"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1BCD8"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="DayPhone"
+                android:inputType="phone"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/evephone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" eve_Phone"
+                android:inputType="phone"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/mob_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" mob_Phone"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/shipping_region_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="shipping_region_id"
+            android:inputType="number"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/CreateAccount"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+
+            android:layout_height="70dp"
+            android:text="Create New Account " />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+
+</RelativeLayout>
