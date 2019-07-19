@@ -1,0 +1,11 @@
+
+<?php
+ $server ="localhost";
+$password="123abcaa";
+$username="root";
+$Db="android2";
+$conn=mysqli_connect($server,$username,$password,$Db);
+if($conn){//Check for connection
+print("connect");
+$searchword=$_POST["search"];
+>
